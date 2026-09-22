@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PacificRimBreachfall Editor Win64 Development Build",
+      "type": "shell",
+      "command": "Engine/Build/BatchFiles/Build.bat",
+      "options": {
+        "cwd": "C:/Program Files/Epic Games/UE_5.8"
+      },
+      "args": [
+        "PacificRimBreachfallEditor",
+        "Win64",
+        "Development",
+        "-project=${workspaceFolder}/PacificRimBreachfall.uproject",
+        "-waitmutex"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
